@@ -33,7 +33,7 @@ public class SnapShot extends TestBase{
 			// capture screen of the desktop
 			BufferedImage screenFullImage = robot.createScreenCapture(screenRect);
 			// save the screenshot to local system
-			ImageIO.write(screenFullImage, "png", new File(fileWithPath));
+			ImageIO.write(screenFullImage, "jpg", new File(fileWithPath));
 		}
 		
 	}

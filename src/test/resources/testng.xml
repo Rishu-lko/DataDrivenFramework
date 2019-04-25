@@ -5,6 +5,7 @@
 		<listener class-name="org.uncommons.reportng.HTMLReporter" />
 		<listener
 			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="com.autotech.listeners.CustomListeners" />
 	</listeners>
 
 	<test name="Bank Manager Login Test">

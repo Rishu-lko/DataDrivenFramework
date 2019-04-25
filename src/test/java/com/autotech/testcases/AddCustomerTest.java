@@ -30,13 +30,15 @@ public class AddCustomerTest extends TestBase {
 		Assert.assertTrue(alert.getText().contains(alertText));
 		TimeUnit.SECONDS.sleep(1);
 		Reporter.log("Customer added successfully");
-		String addCustomerTimeVar = dateFormat.format(new Date());
-		SnapShot.takesSnapShot(driver, System.getProperty("user.dir")+"\\src\\test\\resources\\screenshots\\addCustomer_"+addCustomerTimeVar+".png");	
-		Reporter.log("<a target=\"_blank\" href=\""+System.getProperty("user.dir")+"\\src\\test\\resources\\screenshots\\addCustomer_"+addCustomerTimeVar+".png\">Screenshot</a>");
-		Reporter.log("<br>");
-		Reporter.log("<a target=\"_blank\" href=\""+System.getProperty("user.dir")+"\\src\\test\\resources\\screenshots\\addCustomer_"+addCustomerTimeVar+".png\"><img src=\""+System.getProperty("user.dir")+"\\src\\test\\resources\\screenshots\\addCustomer_"+addCustomerTimeVar+".png\" height=200 width=200></img></a>");
-		TimeUnit.SECONDS.sleep(3);
+//		String addCustomerTimeVar = dateFormat.format(new Date());
+//		SnapShot.takesSnapShot(driver, System.getProperty("user.dir")+"\\src\\test\\resources\\screenshots\\addCustomer_"+addCustomerTimeVar+".png");	
+//		Reporter.log("<a target=\"_blank\" href=\""+System.getProperty("user.dir")+"\\src\\test\\resources\\screenshots\\addCustomer_"+addCustomerTimeVar+".png\">Screenshot</a>");
+//		Reporter.log("<br>");
+//		Reporter.log("<a target=\"_blank\" href=\""+System.getProperty("user.dir")+"\\src\\test\\resources\\screenshots\\addCustomer_"+addCustomerTimeVar+".png\"><img src=\""+System.getProperty("user.dir")+"\\src\\test\\resources\\screenshots\\addCustomer_"+addCustomerTimeVar+".png\" height=200 width=200></img></a>");
+		//TimeUnit.SECONDS.sleep(3);
 		alert.accept();
+		Assert.fail("Add customer not successful");
+		
 	}
 
 	@DataProvider
