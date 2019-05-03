@@ -30,6 +30,6 @@ public class BankManagerLoginTest extends TestBase {
 //		Reporter.log("<a target=\"_blank\" href=\""+System.getProperty("user.dir")+"\\src\\test\\resources\\screenshots\\loginAsBankManager_"+loginAsBankManagerDateTimeVar+".png\"><img src=\""+System.getProperty("user.dir")+"\\src\\test\\resources\\screenshots\\loginAsBankManager_"+loginAsBankManagerDateTimeVar+".png\" height=200 width=200></img></a>");
 		
 		driver.findElement(By.cssSelector(or.getProperty("addCustomerButton"))).click();
-		Assert.fail("Login not successful");
+	//	Assert.fail("Login not successful");
 	}
 }
